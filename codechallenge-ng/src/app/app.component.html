@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-12">
+    <h1 class="h3 mb-4 text-gray-800">Empleados disponibles</h1>
+  </div>
+  <div class="col-12">
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-pills card-header-pills">
+          <li class="nav-item">
+            <div class="form-group">
+              <label>Inicio de Jornada</label>
+            <input name="hora_inicio" [(ngModel)]="inicio" type="number" placeholder="Hora de inicio" min="1" max="23" class="form-control">
+            </div>
+          </li>
+          <li class="pl-3 nav-item">
+            <div class="form-group">
+              <label>Fin de Jornada</label>
+              <input name="hora_fin" [(ngModel)]="fin" placeholder="Hora de fin" min="1" max="23" type="number" class="form-control">
+            </div>
+          </li>
+          <li class="pl-3 nav-item">
+            <div class="form-group">
+              <label>Cantidad de Empleados</label>
+              <input type="number" name="cant_empleados"  [(ngModel)]="cant" placeholder="Limite para considerar disponible" class="form-control">
+            </div>
+          </li>
+          <li class="pl-3 nav-item">
+            <div class="form-group">
+              <label>Incluir Almuerzo </label>
+              <select  name="almuerzos" [(ngModel)]="almuerzo" class="form-control">
+                <option value="0">SI</option>
+                <option value="1">NO</option>
+              </select>
+            </div>
+          </li>
+          <li class="pl-3 nav-item">
+            <div class="form-group pt-4">
+              <button class="btn btn-primary" (click)="onBuscar()">Consultar empleados</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <table class="table table-hover">
+          <thead>
+          <th width="15%">Horario</th>
+          <th align="left">Empleados</th>
+          </thead>
+          <tbody>
+          <tr *ngFor="let item of resulset">
+            <td>{{item['time_point'].substring(10)}}</td>
+            <td align="left"><span class="badge badge-secondary font-size-normal ml-2" *ngFor="let emp of item['employees']">{{emp}}</span></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
