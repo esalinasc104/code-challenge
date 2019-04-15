@@ -77,7 +77,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             horaEval = ConstantUtil.addMinutes(horaEval, 30);
 
             //Si la flag de considerar el almuerzo esta activa nos saltamos la cantidad de tiempo que dura el almuerzo
-            if(flag==1 && horaEval.compareTo(horaInicioLaunch)==0){
+            if(flag==0 && horaEval.compareTo(horaInicioLaunch)==0){
                 horaEval = ConstantUtil.addMinutes(horaEval, launch_duration);
             }
         }
