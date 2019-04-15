@@ -1,7 +1,7 @@
 # code-challenge
 Proyecto de respuesta al ejercicio de TaskEasy
 
-## IMPORTANTE
+## SOLUCION PROPUESTA
 La forma de resolver el ejercicio fue elaborar un Web Service REST con Spring Boot. Simulando la existencia de una Repository de Base de datos, una Array de datos ingresados de forma manual, de acuerdo a los valores indicados en el correo. Para consumir este Web Service se detallan abajo la forma de hacerlo. Ademas se incluyo un ejemplo de como pueden consumirse estos endpoint usando Angular. Si bien, la aplicacion por ser de forma "ejemplificativa" no tiene incluido los temas de seguridad por token o el uso de una base de datos como tal.
 
 ## DATOS PARA EJECUTAR
