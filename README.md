@@ -31,8 +31,179 @@ Teniendo corriendo la aplicacion o el proyecto y usando POSTMAN o cualquier ide 
 Este regresara en formato JSON todos los empleados y las reuniones por cada uno de ellos.
 
 ### 2. OBTENER LOS EMPLEADOS FILTRADOS DE ACUERDO A LOS PARAMETROS DEL EJERCICIO
+#### INPUT
 2.1 Hacer una peticion a la url: http://localhost:8080/api/employees/schedule/8/17/0/3
 Este regresara en formato JSON todos los horarios entre las 8 y las 17 horas, sin considerar el almuerzo y teniendo por parametros 3 empleados como minimo, para considerar disponible el horario.
+
+#### OUTPUT
+{
+    "code": "0",
+    "response": [
+        {
+            "time_point": "14-04-2019 08:00:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Luis"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 08:30:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Alex",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 09:00:00",
+            "employees": [
+                "Kyle",
+                "Alex",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 09:30:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 10:00:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Alex",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 10:30:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Alex",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 11:00:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Alex",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 11:30:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Alex",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 13:00:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Alex",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 14:00:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Alex",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 14:30:00",
+            "employees": [
+                "Paul",
+                "Alex",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 15:00:00",
+            "employees": [
+                "Kyle",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 15:30:00",
+            "employees": [
+                "Kyle",
+                "Alex",
+                "Jairo"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 16:00:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Alex",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 16:30:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Alex",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        },
+        {
+            "time_point": "14-04-2019 17:00:00",
+            "employees": [
+                "Kyle",
+                "Paul",
+                "Alex",
+                "Luis",
+                "Jairo",
+                "Sonya"
+            ]
+        }
+    ],
+    "message": "Transaction done"
+}
 
 #### ACLARACION
 En la peticion anterior, los ultimos valores: 8/17/0/3: corresponden a los parametros de consultar, de acuerdo a lo siguiente:
