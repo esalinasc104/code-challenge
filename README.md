@@ -27,11 +27,11 @@ La forma de resolver el ejercicio fue elaborar un Web Service REST con Spring Bo
 ## MANEJO DE WEB SERVICE:
 Teniendo corriendo la aplicacion o el proyecto y usando POSTMAN o cualquier ide de consumo REST:
 ### 1. OBTENER TODOS LOS EMPLEADOS CONFIGURADOS:
-1.1 Hacer una peticion a la url:localhost:8080/api/employees
+1.1 Hacer una peticion a la url: http://localhost:8080/api/employees
 Este regresara en formato JSON todos los empleados y las reuniones por cada uno de ellos.
 
 ### 2. OBTENER LOS EMPLEADOS FILTRADOS DE ACUERDO A LOS PARAMETROS DEL EJERCICIO
-2.1 Hacer una peticion a la url: localhost:8080/api/employees/schedule/8/17/0/3
+2.1 Hacer una peticion a la url: http://localhost:8080/api/employees/schedule/8/17/0/3
 Este regresara en formato JSON todos los horarios entre las 8 y las 17 horas, sin considerar el almuerzo y teniendo por parametros 3 empleados como minimo, para considerar disponible el horario.
 
 #### ACLARACION
